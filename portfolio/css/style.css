@@ -1,0 +1,1327 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    font-family: 'Manjari', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+    max-width: 900px;
+    background-image: linear-gradient(to bottom, rgba(13, 16, 67, 1), rgba(15, 26, 144, 0.9));
+    background-attachment: fixed;
+}
+
+/* STRUCTURE */
+
+p {
+    line-height: 2.1;
+}
+
+h1 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, #fc5858 65%);
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 100px;
+}
+
+.section1 {
+    margin-top: 20px;
+}
+
+.section1,
+.section2,
+.section3 {
+    padding-top: 70px;
+}
+
+.section2,
+.section3 {
+    margin-top: 80px;
+}
+
+.section3 {
+    margin-bottom: 200px;
+}
+
+#logoHtml {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+}
+
+#logoCss {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+}
+
+#logoJS {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 120px;
+    margin-top: 14px;
+}
+
+#logoPhp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+    margin-top: 60px;
+    margin-right: 30px;
+}
+
+#logoWp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 150px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.firstRowLogos {
+    margin-top: 30px;
+}
+
+.check {
+    color: chartreuse;
+}
+
+.skills {
+    margin-top: 15px;
+}
+
+.pp {
+    font-size: 18px;
+    color: chartreuse;
+    margin-top: 200px;
+}
+
+.pp:hover {
+    color: white;
+}
+
+.ppBody {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.btn {
+    margin-bottom: 70px;
+}
+
+a,
+.btn:hover {
+    text-decoration: none !important;
+}
+
+/* NAV */
+
+header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.logo {
+    max-height: 130px;
+    margin-top: 80px;
+    margin-left: 120px;
+    margin-bottom: 15px;
+}
+
+#nav a {
+    display: block;
+    font-size: 25px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: white;
+    margin: 30px;
+    margin-left: 40px;
+    padding: 10px;
+    display: block;
+    max-width: 70px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a::first-letter {
+    color: red;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    position: relative;
+}
+
+a:after,
+a:visited:after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 0%;
+    background: red;
+    transition: 0.4s;
+}
+
+#aNav:hover:after,
+#aNav:visited:hover:after {
+    width: 130%;
+}
+
+#wNav:hover:after,
+#wNav:visited:hover:after {
+    width: 110%;
+}
+
+#cNav:hover:after,
+#cNav:visited:hover:after {
+    width: 170%;
+}
+
+.git {
+    margin-left: 65px;
+}
+
+.lin {
+    margin-left: 20px
+}
+
+.git:hover,
+.lin:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#minimenu,
+.projectDescription {
+    display: none;
+}
+
+/* TEXT ANIMATION*/
+
+@keyframes fadeInLeft {
+    from {
+        transform: translate3d(-80px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        transform: translate3d(-80px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translate3d(80px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        transform: translate3d(60px, 0, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    opacity: 0
+}
+
+.fadeInLeft {
+    opacity: 0;
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+    opacity: 0;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+}
+
+/*WORKS IMG*/
+
+.works {
+    position: relative;
+    width: 50%;
+}
+
+.webImg {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.webText {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.works:hover .webImg {
+    opacity: 0.1;
+}
+
+.works:hover .webText {
+    opacity: 1;
+}
+
+.imgText {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+/* CONTACT FORM */
+
+form {
+    position: absolute;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.form-control {
+    width: 700px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid;
+    font-size: 25px;
+    border-radius: 0;
+}
+
+.form-control:invalid {
+    background: transparent;
+    box-shadow: none;
+    color: white;
+}
+
+.form-control:valid {
+    background: transparent;
+    box-shadow: none;
+    color: white;
+}
+
+form .submit {
+    background-color: white !important;
+    color: #0D103D !important;
+    border-color: transparent !important;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form .submit:hover {
+    background-color: #dbdbdb !important;
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    color: #dbdbdb !important;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #dbdbdb !important;
+}
+
+::placeholder {
+    color: #dbdbdb !important;
+}
+
+.output {
+    color: chartreuse;
+    margin-top: 370px;
+    text-align: center;
+}
+
+/**************************************************************************/
+
+@media screen and (min-width:1700px) {
+
+    p {
+        font-size: 40px;
+    }
+
+    header {
+        margin-left: 130px;
+    }
+
+    .section1 {
+        margin-top: 80px;
+    }
+
+    .lanSki {
+        margin-top: 230px;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        padding-top: 100px;
+    }
+
+    .section2,
+    .section3 {
+        margin-top: 200px;
+    }
+
+    .section3 {
+        margin-bottom: 300px;
+    }
+
+}
+
+@media screen and (max-width:1699px) {
+
+    p {
+        font-size: 32px;
+    }
+
+    header {
+        margin-left: 40px;
+    }
+
+    .lanSki {
+        margin-top: 200px;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        padding-top: 80px;
+    }
+
+    .section2,
+    .section3 {
+        margin-top: 80px;
+    }
+
+    .section3 {
+        margin-bottom: 180px;
+    }
+
+}
+
+
+@media screen and (max-width:1439px) {
+
+    p {
+        font-size: 30px;
+    }
+
+    header {
+        font-size: 25px;
+    }
+
+    #aNav:hover:after,
+    #aNav:visited:hover:after {
+        width: 130%;
+    }
+
+    #wNav:hover:after,
+    #wNav:visited:hover:after {
+        width: 115%;
+    }
+
+    #cNav:hover:after,
+    #cNav:visited:hover:after {
+        width: 165%;
+    }
+
+    .lanSki {
+        margin-top: 200px;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        padding-top: 130px;
+    }
+
+    .section2,
+    .section3 {
+        margin-top: 180px;
+    }
+
+    .section3 {
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and (max-width:1249px) {
+
+    .content {
+        margin-top: 40px;
+        margin-left: 110px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    header {
+        font-size: 22px;
+        margin-left: -30px;
+    }
+
+    #aNav:hover:after,
+    #aNav:visited:hover:after {
+        width: 115%;
+    }
+
+    #wNav:hover:after,
+    #wNav:visited:hover:after {
+        width: 100%;
+    }
+
+    #cNav:hover:after,
+    #cNav:visited:hover:after {
+        width: 150%;
+    }
+
+    .lanSki {
+        margin-top: 110px;
+        margin-left: -60px;
+    }
+
+    #logoHtml {
+        max-width: 160px;
+    }
+
+    #logoCss {
+        max-width: 160px;
+    }
+
+    #logoJS {
+        max-width: 140px;
+        margin-top: 10px;
+    }
+
+    #logoPhp {
+        max-width: 160px;
+        margin-top: 80px;
+        margin-right: 40px;
+    }
+
+    #logoWp {
+        max-width: 160px;
+        margin-top: 45px;
+        margin-left: 30px;
+    }
+
+    .section1,
+    .section2,
+    .section3 {
+        padding-top: 120px;
+    }
+
+    lanSki {
+        margin-top: 350px;
+    }
+
+    .section2,
+    .section3 {
+        max-width: 700px;
+        margin-top: 110px;
+    }
+
+    .section3 {
+        margin-bottom: 200px;
+    }
+    
+    .output {
+            font-size: 24px;
+        }
+}
+
+@media screen and (max-width:1024px) {
+
+    html,
+    body {
+        display: auto;
+    }
+
+    p {
+        font-size: 40px;
+        line-height: 2.6;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    header {
+        background-image: linear-gradient(to bottom, rgba(13, 16, 67, 1), rgba(15, 26, 144, 0.9));
+        margin-left: auto;
+        z-index: 1;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -12px;
+        max-height: 100px
+    }
+
+    #nav {
+        margin: 0 auto;
+        width: 300px;
+        /* fixed width */
+    }
+
+    #nav a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 40px;
+        margin-top: 80px
+    }
+
+    #minimenu {
+        display: block;
+        float: right;
+        font-size: 30px;
+        margin-right: 50px;
+        margin-top: -80px;
+        color: white;
+        cursor: pointer;
+    }
+
+    a:after {
+        background: transparent;
+    }
+
+    .icons {
+        margin-bottom: 900px;
+    }
+
+    .content {
+        margin-left: auto;
+    }
+
+    .lanSki {
+        margin-top: 490px;
+        margin-left: auto;
+    }
+
+    .imgText {
+        display: none;
+    }
+
+    .projectDescription {
+        display: block;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .section1 {
+        padding-top: 130px;
+    }
+
+    .section2,
+    .section3 {
+        margin: auto;
+        padding-top: 400px;
+    }
+
+    .section3 {
+        margin-bottom: 600px;
+    }
+}
+
+    @media screen and (max-width:768px) {
+
+        p {
+            font-size: 32px;
+            line-height: 2.6;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+
+        #logoHtml {
+            max-width: 100px;
+        }
+
+        #logoCss {
+            max-width: 100px;
+        }
+
+        #logoJS {
+            max-width: 80px;
+            margin-top: 12px;
+        }
+
+        #logoPhp {
+            max-width: 100px;
+            margin-right: 20px;
+            margin-top: 65px
+        }
+
+        #logoWp {
+            max-width: 100px;
+            margin-left: 15px;
+
+        }
+
+        .section1 {
+            padding-top: 100px;
+        }
+
+        .section2,
+        .section3 {
+            margin: auto;
+            padding-top: 200px;
+        }
+
+        .section3 {
+            margin-bottom: 400px;
+        }
+        
+        .output {
+            font-size: 22px;
+            margin-top: 390px;
+        }
+
+    }
+
+    @media screen and (max-width:600px) {
+
+        p {
+            font-size: 24px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+
+        .section1 {
+            padding-top: 100px;
+        }
+
+        .section2,
+        .section3 {
+            padding-top: 220px;
+        }
+
+        .section3 {
+            margin-bottom: 400px;
+        }
+
+        .form-control {
+            width: 450px;
+        }
+
+        .output {
+            font-size: 22px;
+            margin-top: 330px;
+        }
+
+    }
+
+    @media screen and (max-width:480px) {
+
+        p {
+            font-size: 20.4px;
+            line-height: 2.4;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        h2 {
+            font-size: 45px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-height: 70px
+        }
+
+
+        #nav {
+            width: 260px;
+        }
+
+        #nav a {
+            font-size: 25px;
+        }
+
+        #minimenu {
+            font-size: 25px;
+            margin-right: 30px;
+            margin-top: -65px;
+        }
+
+        .section1 {
+            padding-top: 100px;
+        }
+
+        .projectDescription {
+            font-size: 15px;
+        }
+
+        .section2,
+        .section3 {
+            padding-top: 200px;
+        }
+
+        .section3 {
+            margin-bottom: 400px;
+        }
+
+        .form-control {
+            width: 450px;
+        }
+    }
+
+    @media screen and (max-width:414px) {
+
+        p {
+            font-size: 18.5px;
+            line-height: 2.2;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-height: 50px;
+        }
+
+        #nav {
+            margin-top: -60px;
+            width: 250px;
+        }
+
+        #nav a {
+            font-size: 25px;
+        }
+
+        #minimenu {
+            font-size: 20px;
+            margin-right: 30px;
+            margin-top: -50px;
+        }
+
+        #logoHtml {
+            max-width: 90px;
+        }
+
+        #logoCss {
+            max-width: 90px;
+        }
+
+        #logoJS {
+            max-width: 70px;
+            margin-top: 12px;
+        }
+
+        #logoPhp {
+            max-width: 100px;
+            margin-right: 3px;
+            margin-top: 65px
+        }
+
+        #logoWp {
+            max-width: 90px;
+            margin-left: 3px;
+
+        }
+
+        .section1 {
+            padding-top: 70px;
+        }
+
+        .lanSki {
+            margin-top: 280px;
+        }
+
+        .section2 {
+            padding-top: 100px;
+        }
+
+        .section3 {
+            padding-top: 170px;
+        }
+
+        .form-control {
+            width: 380px;
+        }
+
+        form .form-control {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width:375px) {
+
+        p {
+            font-size: 16.6px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            max-height: 40px
+        }
+
+        #nav {
+            width: 240px;
+        }
+
+
+        #nav a {
+            font-size: 25px;
+        }
+
+        #minimenu {
+            font-size: 18px;
+            margin-right: 25px;
+            margin-top: -45px;
+        }
+
+        #logoHtml {
+            max-width: 75px;
+        }
+
+        #logoCss {
+            max-width: 75px;
+        }
+
+        #logoJS {
+            max-width: 65px;
+            margin-top: 8px;
+        }
+
+        #logoPhp {
+            max-width: 85px;
+            margin-top: 40px;
+        }
+
+        #logoWp {
+            max-width: 75px;
+            margin-top: 30px;
+        }
+
+        .works {
+            width: 100%;
+        }
+
+        .section1 {
+            padding-top: 50px;
+        }
+        
+         .section1 {
+            padding-top: 50px;
+        }
+
+
+        .form-control {
+            width: 320px;
+        }
+
+        form .form-control {
+            font-size: 15px;
+        }
+        .output {
+            font-size: 16px;
+            margin-top: 290px;
+        }
+    }
+
+    @media screen and (max-width:360px) {
+
+        p {
+            font-size: 16.5px;
+        }
+
+        nav {
+            margin-top: auto;
+        }
+
+        nav ul li a {
+            margin: -30px;
+        }
+
+        #nav {
+            width: 120px;
+        }
+
+        .git {
+            margin-left: -6px;
+        }
+
+        .lin {
+            margin-left: 20px;
+        }
+
+        #logoHtml {
+            max-width: 65px;
+        }
+
+        #logoCss {
+            max-width: 65px;
+        }
+
+        #logoJS {
+            max-width: 55px;
+            margin-top: 8px;
+        }
+
+        #logoPhp {
+            max-width: 75px;
+            margin-top: 40px;
+        }
+
+        #logoWp {
+            max-width: 65px;
+            margin-top: 30px;
+        }
+
+        .section3 {
+            margin-bottom: 200px;
+        }
+
+    }
+
+
+    @media screen and (max-width:320px) {
+
+        p {
+            font-size: 13px;
+            line-height: 2;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            margin-top: -20px;
+            margin-bottom: 6px;
+            max-height: 40px;
+        }
+
+        #minimenu {
+            font-size: 18px;
+            margin-right: 20px;
+            margin-top: -35px;
+        }
+
+        nav {
+            margin-top: auto;
+        }
+
+        #nav {
+            width: 110px;
+        }
+
+        #nav a {
+            font-size: 20px;
+        }
+
+        .git {
+            margin-left: -6px;
+        }
+
+        .lin {
+            margin-left: 20px;
+        }
+
+        
+        #logoHtml {
+            max-width: 50px;
+        }
+
+        #logoCss {
+            max-width: 50px;
+        }
+
+        #logoJS {
+            max-width: 40px;
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+
+        #logoPhp {
+            max-width: 55px;
+            margin-right: -7px;
+            margin-top: 40px;
+        }
+
+        #logoWp {
+            max-width: 50px;
+            margin-left: 3px;
+            margin-top: 30px;
+        }
+
+        .works .projectDescription {
+            font-size: 12px;
+        }
+
+        .section1 {
+            padding-top: 70px;
+        }
+
+        .lanSki {
+            margin-top: 200px;
+        }
+
+        .section2 {
+            padding-top: 100px;
+        }
+
+        .section3 {
+            padding-top: 120px;
+        }
+
+        .form-control {
+            width: 280px;
+        }
+
+        form .form-control {
+            font-size: 12px;
+        }
+
+        .section3 {
+            margin-bottom: 200px;
+        }
+        
+        .output {
+            font-size: 12px;
+            margin-top: 260px;
+        }
+    }
+
+    @media screen and (max-width:240px) {
+
+        p {
+            font-size: 9px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-top: -25px;
+            margin-bottom: 4px;
+            max-height: 30px;
+        }
+
+        #minimenu {
+            font-size: 14px;
+            margin-right: 20px;
+            margin-top: -27px;
+        }
+
+        nav {
+            margin-top: auto;
+        }
+
+        nav ul li a {
+            margin: -70px;
+        }
+
+        nav ul li {
+            margin-top: -40px;
+            margin-bottom: 40px;
+            margin-left: 30px
+        }
+
+        #nav {
+            width: 80px;
+        }
+
+        #nav a {
+            font-size: 10px;
+
+        }
+
+        .lanSkiTitle {
+            margin-left: 20px;
+        }
+
+        .logos {
+            padding-right: 5px;
+        }
+
+        .firstRowLogos {
+            padding-left: 20px;
+        }
+
+
+        #logoHtml {
+            max-width: 25px;
+            margin: auto;
+        }
+
+        #logoCss {
+            max-width: 25px;
+            margin: auto;
+        }
+
+        #logoJS {
+            max-width: 20px;
+            margin: auto;
+            margin-top: 3px;
+        }
+
+        #logoPhp {
+            max-width: 30px;
+            margin-top: 18px;
+        }
+
+        #logoWp {
+            max-width: 25px;
+            margin-top: 14px;
+        }
+
+        .works .projectDescription {
+            font-size: 8px;
+        }
+
+        .section1 {
+            padding-top: 50px;
+        }
+
+        .lanSki {
+            margin-top: 160px;
+            margin-left: -17px;
+        }
+
+        .section2 {
+            padding-top: 50px;
+        }
+
+        .section3 {
+            padding-top: 50px;
+        }
+
+        .form-control {
+            width: 200px;
+        }
+
+        form .form-control {
+            font-size: 8px;
+        }
+
+        .section3 {
+            margin-bottom: 50px;
+        }
+    }
