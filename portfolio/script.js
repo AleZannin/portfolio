@@ -36,7 +36,7 @@ $(function () {
 
     $(window).on("scroll", function (e) {
         if ($(window).scrollTop() >= $("header").height()) $("header").fadeIn(1200);
-        /*else $("header").fadeOut(1500);*/
+       /* else $("header").fadeOut(1500);*/
     })
 });
 

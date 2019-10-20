@@ -98,22 +98,18 @@ h2 {
     margin-top: 30px;
 }
 
-.check {
-    color: chartreuse;
-}
-
 .skills {
     margin-top: 15px;
 }
 
 .pp {
     font-size: 18px;
-    color: chartreuse;
+   color: white;
     margin-top: 200px;
 }
 
 .pp:hover {
-    color: white;
+    color: red;
 }
 
 .ppBody {
@@ -123,6 +119,11 @@ h2 {
 
 .btn {
     margin-bottom: 70px;
+    color: white;  
+}
+
+.btn:hover {
+    color: red;  
 }
 
 a,
@@ -370,9 +371,8 @@ form {
 }
 
 form .submit {
-    background-color: white !important;
-    color: #0D103D !important;
-    border-color: transparent !important;
+    color: white;
+    border-color: transparent;
     width: 200px;
     margin-top: 30px;
     margin-left: auto;
@@ -380,7 +380,7 @@ form .submit {
 }
 
 form .submit:hover {
-    background-color: #dbdbdb !important;
+   color: red;
 }
 
 ::-webkit-input-placeholder {
