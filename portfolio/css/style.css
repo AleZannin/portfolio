@@ -106,24 +106,10 @@ h2 {
   margin-top: 15px;
 }
 
-.pp {
-  font-size: 18px;
-  color: white;
-  margin-top: 200px;
-}
-
-.pp:hover {
-  color: red;
-}
-
-.ppBody {
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-
 .btn {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   color: white;
+  border: 2px solid white;
 }
 
 .btn:hover {
@@ -133,6 +119,32 @@ h2 {
 a,
 .btn:hover {
   text-decoration: none !important;
+}
+
+/* ARROW */
+
+.arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  margin-left: 50%;
+  margin-top: 50px;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  animation: fadein;
+  animation-fill-mode: both;
+  visibility: hidden;
+  animation-delay: 5s;
+}
+
+@keyframes fadein {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 /* SCROLLBAR*/
@@ -155,16 +167,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   transform: translate(-50%, -50%);
   pointer-events: none;
-}
-
-/* MOUSE CURSOR*/
-
-.cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid red;
-  border-radius: 50%;
-  position: absolute;
 }
 
 /* NAV */
@@ -436,11 +438,43 @@ form .submit:hover {
   color: #dbdbdb !important;
 }
 
-.output {
-  color: chartreuse;
-  margin-top: 370px;
-  text-align: center;
+/* FOOTER */
+
+.pp {
+  font-size: 18px;
+  color: white;
+  padding-top: 50px;
+  padding-bottom:50px;
 }
+
+.pp:hover {
+  color: red;
+}
+
+footer {
+  margin-top: 500px;
+}
+
+/* EXTRA PAGES */
+
+.ppThankYoupagesBody {
+  margin-top: 50px;
+}
+
+.thankYou { 
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+	0% { 
+		opacity: 0; 
+	} 
+	100% { 
+		opacity: 1; 
+	} 
+} 
 
 /**************************************************************************/
 
@@ -507,6 +541,11 @@ form .submit:hover {
 }
 
 @media screen and (max-width: 1439px) {
+
+  .content {
+    margin-left: 180px;
+  }
+
   p {
     font-size: 30px;
   }
@@ -741,6 +780,9 @@ form .submit:hover {
   .section3 {
     margin-bottom: 600px;
   }
+  footer {
+    margin-top: 800px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -798,6 +840,9 @@ form .submit:hover {
   .output {
     font-size: 22px;
     margin-top: 390px;
+  }
+  footer {
+    margin-top: 600px;
   }
 }
 
@@ -890,6 +935,10 @@ form .submit:hover {
 
   .form-control {
     width: 450px;
+  }
+
+  footer {
+    margin-top: 450px;
   }
 }
 

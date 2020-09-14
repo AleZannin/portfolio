@@ -41,37 +41,3 @@ $(function() {
   });
 });
 
-const url =
-  "https://script.google.com/macros/s/AKfycbx1IyKUefvcAWKEcZETtPD_ATR3vmrhCvs0-VhMBrLCslbxCIc/exec";
-const form = document.forms.namedItem("myForm");
-console.log(form);
-
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-  createMessage();
-});
-
-function createMessage() {
-  console.log("submitted");
-  const formData = new FormData(form);
-  console.log(formData);
-  fetch(url, {
-    method: "POST",
-    body: formData
-  })
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-      console.log(data);
-      let tempMessage = "";
-      if (data.status === 200) {
-        tempMessage = "Message Sent!";
-        form.reset();
-      } else {
-        tempMessage = "Something went wrong";
-      }
-
-      document.querySelector(".output").innerHTML = tempMessage;
-    });
-}
